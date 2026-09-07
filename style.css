@@ -13,4 +13,6 @@
 #timertext {
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50vh;
+    font-weight: 100;
 }
