@@ -11,13 +11,14 @@
     <h1 id="timertext">0.00</h1>
   </div>
   <script>
+    const ttc = document.getElementById("timertextcontainer");
     window.addEventListener("keydown", (event) => {
       if (event.repeat) return;
-      document.body.style.backgroundColor = "red";
+      ttc.style.backgroundColor = "red";
       if (event.key = " ") {
         holdTimer = setTimeout(() => {
           holdTimer = null;
-          document.body.style.backgroundColor = "green";
+          ttc.style.backgroundColor = "green";
         }, 550);
       }
     });
@@ -25,6 +26,7 @@
       if (holdTimer) {
         clearTimeout(holdTimer);
         holdTimer = null;
+        ttc.style.backgroundColor = "";
       }
     });
   </script>
