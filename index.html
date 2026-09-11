@@ -14,7 +14,7 @@
     const ttc = document.getElementById("timertextcontainer");
     window.addEventListener("keydown", (event) => {
       if (event.repeat) return;
-      if (event.key = " ") {
+      if (event.key == " ") {
         ttc.style.backgroundColor = "red";
         holdTimer = setTimeout(() => {
           holdTimer = null;
