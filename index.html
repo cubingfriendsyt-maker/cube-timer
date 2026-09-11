@@ -24,11 +24,10 @@
       }
     });
     window.addEventListener("keyup", (event) => {
-      if (!event.key == " ") return;
-      if (holdTimer) {
+      if (holdTimer && event.key == " ") {
         clearTimeout(holdTimer);
         holdTimer = null;
-        ttc.style.backgroundColor = "";
+        ttc.style.backgroundColor = "rgb(13, 73, 163)";
       }
     });
   </script>
